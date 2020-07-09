@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>The Monster Slayer</title>
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
   <link rel="stylesheet" href="css/foundation.min.css">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -40,10 +40,10 @@
     <!-- Must follow your v-else with the SAME ELEMENT! Ex. You couldnt use v-else on a div element -->
     <section class="row controls" v-else>
       <div class="small-12 columns">
-        <button id="attack" @click="attack">ATTACK</button>
-        <button id="special-attack" @click="specialAttack">SPECIAL ATTACK</button>
-        <button id="heal" @click="heal">HEAL</button>
-        <button id="give-up" @click="giveUp">GIVE UP</button>
+        <button id="attack" v-on:click="attack">ATTACK</button>
+        <button id="special-attack" v-on:click="specialAttack">SPECIAL ATTACK</button>
+        <button id="heal" v-on:click="heal">HEAL</button>
+        <button id="give-up" v-on:click="giveUp">GIVE UP</button>
       </div>
     </section>
     <section class="row log">
